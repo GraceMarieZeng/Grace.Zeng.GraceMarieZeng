@@ -1,0 +1,28 @@
+What does the git init command do?
+	It creates a new subdirectory named .git for created files to be added to
+What does git add do? How is it different from git commit?
+	git commit can commit several git adds to one comment, and so adding stages for 	the commitment that will come so the additions can be under the same comment
+What is the difference between staged and committed (or versioned) files?
+	Staging sets up for the commit to be stored in the repository, but without the 		commit it is not stored in the .git yet 
+What's the shortcut for adding all files and commiting them?
+	gc (commit)
+	ga (add) 
+How do you unstage a staged file? How do you go back to an old version of a committed file?
+	git commit —amend and this will just add what is added after to the previous 		comment
+	git reset 
+	git checkout
+Why are commit messages very important? 
+	They help coders keep track of where they made changes
+How do I revert to a previous commit (i.e. go back to an earlier "draft")?
+	git checkout
+How do you exit out of vi? (Also called vim.)
+	q
+What's the difference between GitHub and git? Could git exist without GitHub? Could GitHub exist without git?
+	git is a local repository that could be lost on your computer whereas GitHub is a 	service that tracks and can hold git repositories you want them to hold  
+Why is GitHub a cool company?
+	keeps files safe
+What does git push do?
+	pushes from the local git repository to the GitHub repository 
+What does git pull do? How is it different from/same as git fetch and git merge?
+	git pull takes from the remote repository and merges it into the local repository 
+	

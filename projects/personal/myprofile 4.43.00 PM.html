@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<head>
+<title>Grace Zeng</title>
+<script src="/assets/jquery.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>>
+<style>
+img {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 0px auto;
+
+}
+body {
+  font-family: 'Old Standard TT', cursive;
+  margin: 0px auto;
+  max-width: 600px;
+  background: url("http://fuzznetworks.com/wp-content/uploads/2012/05/Simple-black-and-white-liniar-background-hd-wallpaper-2000x1333.jpg");
+  background-size: cover;
+}
+div {
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 15px;
+  font-family: 'Old Standard TT', cursive;
+  font-size: 20px;
+}
+h1 {
+  font-family: 'Old Standard TT', cursive;
+  text-align: center;
+  font-size: 75px;
+  color: rgba(0,150,255,1);
+  margin: 60px 0 0 0;
+}
+h2 {
+  font-family: 'Old Standard TT', cursive;
+  text-align: center;
+  color: rgba(0,150,255,1);
+  margin: 0px 0 70px 0;
+}
+p {
+  color: rgba(255,255,255,1);
+  background: black;
+  background: linear-gradient(bottom, rgba(0,150,255,1), rgba(0,150,255,.4));
+  background: -webkit-linear-gradient(bottom, rgba(0,150,255,1), rgba(0,150,255,.2));
+  background: -moz-linear-gradient(bottom, rgba(0,150,255,1), rgba(0,150,255,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+  -webkit-transition: height .5s;
+  -moz-transition: height .5s;
+}
+
+small {
+  opacity: 0;
+  border-radius: 15px;
+}
+
+.show-description p {
+  height: 150px;
+  border-radius: 15px;
+}
+
+.show-description small {
+  opacity: 1;
+  border-radius: 15px;
+}
+
+.first{
+  background-image: url("https://geekbarchicago.com/wp-content/uploads/2015/02/Binary-Code.jpg");
+  background-size: cover;
+}
+.second{
+  background-image: url("https://brianvancise.files.wordpress.com/2015/01/cape-town-south-africa.jpg");
+  background-size: cover;
+}
+.third{
+  background-image: url("https://naturallybeige.files.wordpress.com/2015/01/running-feet.jpg");
+  background-size: cover;
+}
+.zero {
+  background-image: url("http://i.imgur.com/lZmAqHB.jpg");
+  background-size: cover;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 12px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<img src="http://i.imgur.com/lZmAqHB.jpg" height="250px" align="center">
+<h1>Grace Zeng</h1>
+<h2>University of Virginia</h2>
+<div class="zero">
+<p>Grace Zeng<br /> 
+<small>Hello! I am a rising second-year student at the University of Virginia interested in studying Computer Science, Mathmatics, and Religious Studies.</small></p>
+</div>
+<div class="first">
+  <p>Why do you want to learn to code?<br />
+  <small>I am not sure what my furture will hold, but I am confidant that I will ecounter coding in the future. I want to learn how to code because I think it will be an essential skill in any profession I pursue.  </small></p>
+</div>
+
+<div class="second">
+  <p>What are you most excited about in South Africa?<br />
+  <small>I am generally excited to be traveling abroad at all, but I am specifically excited for Cape Town, South Africa because it seems like such a virbrant, fun, and rich culture to experience.</small></p>
+</div>
+  
+<div class="third">
+  <p>What is one surprising or cool thing about you?<br />
+  <small>I ran a half-marathon recently, and after going to South Africa will begin training for the Marine Corps Marathon held in Washington D.C. in October.</small></p>
+</div>
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+
+</body>

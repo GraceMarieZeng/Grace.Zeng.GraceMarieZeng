@@ -1,0 +1,27 @@
+
+x = 5
+y = 10
+x = y+5
+y = y+10
+#what is the value of x? 15
+#what is the value of y? 20
+#is x being reassigned? yes
+#is y being reassigned? yes
+
+y="hi"
+x + y  
+#this gives error
+# x is an int type and y is a String type
+#fix error by doing "#{y}#{x}"
+
+name = gets
+blue
+hi_name = y+name
+#name is a string
+#bluehi
+
+puts hi_hiname
+puts hi_name.strip
+puts "#{hi_name.strip}"
+puts "#{hi_name}.strip"
+
