@@ -1,0 +1,12 @@
+What is a database?
+	collection of data that the site stores
+What is a database table? How does it relate to a database? What's a good analogy for a database table (i.e. a way to visualize it)?
+	A database table includes the relevant data of for the methods 
+Draw the tweets database table
+	ID | tweets | hashtags
+Why do we use models/resources at all?
+	Because they logically divide the needed information that needs to be displayed
+What is ActiveRecord?
+	The standardized way to make model in rails
+What's the difference between a database table, resource and an ActiveRecord model?
+	An active record is the computerized and standardized version of a database table 

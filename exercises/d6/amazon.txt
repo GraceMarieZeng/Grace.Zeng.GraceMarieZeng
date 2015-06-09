@@ -1,0 +1,25 @@
+User 
+	name
+	address
+	password
+	credit card number
+	preferences
+	shopping cart
+Order
+	time
+	amount $
+	ETA
+	address
+	tracking 
+Item
+	name
+	price
+	rating
+Category
+	name
+Cart
+	items
+Supplier
+	name 
+	address
+	

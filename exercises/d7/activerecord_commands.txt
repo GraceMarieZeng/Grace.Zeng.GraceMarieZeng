@@ -1,0 +1,41 @@
+Create a User with a name and followers count
+	User.create(handle: "@amazeng", name:"grace", followers: 500)
+Find it with User.find. Assign the result to the variable user
+	User.find(1)
+Find it by name with User.find_by
+	User.find_by(handle: "amazeng")
+Write a command that finds all the users with followers count equal to 10.
+	User.where(followers: 10)
+Update user from step 2 to have a different name. Make sure to save!
+	user.update_attributes(name:"Rose James")
+Create a Tweet for this user. Assign the correct user_id, and make sure to save.
+	tweet = Tweet.create(body:"I LOVE TWITTER!", user_id:1)
+Update the tweet from step 6 to have a different body.
+	tweet.update_attributes(body: "I hate twitter.")
+Destroy it.
+	tweet.destroy
+Create 10 users programmatically, each with a different name. Use a loop—you might want to write pseudo-code first!
+	array_names = [array of ten names]
+	array_handles =[array of ten handles]
+	array_followers =[array of ten numbers]
+	array_names.each do |name|
+		User.create(name:name)
+	end
+	array_handles.each do |handle|
+		User.update_attributes(handle:handle)
+	end
+	array_names.each do |follower|
+		User.update_attributes(followers:follower)
+	end
+Destroy them all
+	User.destroy_all 
+Create 10 tweets in a similar way.
+	just use tweet
+Update all of them to have the body "Ruby is fat"
+	add the tweets to an array
+	array.each do |tweet|
+	tweet.update_attributes(body: “Fat”)
+	end
+Update the fourth one to say "Ruby is getting even fatter"
+	array[3].update_attributes(body: “Fat”)
+	

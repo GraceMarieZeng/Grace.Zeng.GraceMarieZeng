@@ -1,0 +1,20 @@
+.all
+	brings out all of the data
+.first
+	gets the first row in the data
+
+.new
+	sets up a new row to be saved
+.find
+	finds all of the key
+.find_by
+	Finds the first record matching the specified conditions. There is no implied 		ordering so if order matters, you should specify it yourself.
+.where
+	finds the data input at that place
+.save
+	creates the new you were adding
+.update_attributes
+.destroy
+	deletes the row you specify
+What's the difference between .find and .find_by?
+What's the difference between .where and .find_by?
